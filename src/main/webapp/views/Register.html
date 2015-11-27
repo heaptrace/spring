@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<!-- <head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+	 <script type="text/javascript" src="../module/app.js"></script>
+ <script type="text/javascript" src="../controller/RegisterController.js"></script>
+	
+</head> -->
+ <body>
+ 
+<h2>REGISTRATION FORM</h2>
+<form ng-app="myapp" name="sampleForm" class="form-horizontal">
+	<!-- <div class="form-group"> -->
+		<p>
+		<div class="col-xs-4">
+		<label class="control-label">FirstName:</label>
+			<input type="text" class="form-control"  name="fname" ng-model="emp.fname" required >
+			
+		    </p>
+		   <!--  <div class="col-xs-4">
+  <label for="ex3">col-xs-4</label>
+  <input class="form-control" id="ex3" type="text">
+</div> -->
+		    <p>
+		  
+		<label class="control-label">LastName:</label>
+			<input type="text" class="form-control"  name="lname" ng-model="emp.lname" required >
+			</span>
+		    </p>
+	  	 <p>
+			<label class="control-label">Email:</label>
+			<input type="email" class="form-control" name="email" ng-model="emp.email" required>
+			</p>
+			<p>
+			<label class="control-label">Mobile No:</label>
+			<input type="text" class="form-control" name="phone" ng-model="emp.phone" required pattern=[789][0-9]{9} >
+			</p></b>
+			<button class="btn btn-primary" ng-click="clear()" >Reset</button>
+			<input type="submit" class="btn btn-primary" ng-click="save()"></button>
+			
+			
+		</p>
+	</div>
+</form>
+
+</body>
+</html>

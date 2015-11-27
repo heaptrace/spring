@@ -1,0 +1,29 @@
+ <html>
+ <body> 
+	<div>
+	<div class="table-responsive">
+<p ng-hide="msg" class="bg-success"><a style="cursor:pointer;"></a>ALL EMPLOYEE DETAIL</p>
+	<table class="table table-hover">
+	    <tr>
+	        <th>Sr No</th>
+	        <th>Employee ID</th>
+	        <th>Employee FirstName</th>
+	        <th>Employee LastName</th>
+	        <th>Employee Email ID</th>
+	        <th>Employee Mobile</th>
+	    </tr>
+	    <tr class="active">
+	        <td>{{($index+1)}}</td>
+	        <td>{{id}}</td>
+	        <td>{{firstName}}</td>
+	        <td>{{lastName}}</td>
+	        <td>{{email}}</td>
+	        <td>{{phone}}</td>
+          <td><a href=""><span style="color:red" class="glyphicon glyphicon-trash" data="{{persion.id}}"
+          ng-click="deleteEvent(persion.id)"></span></span></a></td>
+	    </tr>
+	</table>
+	</div>
+	</div>
+	</body>
+	</html>
